@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/sweetshop
+  security:
+    jwt:
+      secret: mySecretKey123456789012345678901234567890
+      expiration: 86400000 # 24 hours
+
+logging:
+  level:
+    com.sweetshop: DEBUG
+
+

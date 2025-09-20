@@ -264,9 +264,12 @@ The integration of AI tools into this development process was highly beneficial.
    ```bash
    cd frontend
    npm run build
+<<<<<<< HEAD
    ```
 
 2. Deploy to platforms like Vercel, Netlify, or AWS S3
+=======
+>>>>>>> e3d1dde80e90b2954d434b667d24e91b396d6d64
 
 ## 🤝 Contributing
 
@@ -282,6 +285,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
+<<<<<<< HEAD
 - **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
 
 Co-authored-by: AI Assistant <ai@users.noreply.github.com>
@@ -293,3 +297,8 @@ Co-authored-by: AI Assistant <ai@users.noreply.github.com>
 - MongoDB team for the flexible database solution
 - Tailwind CSS for the utility-first CSS framework
 - All the open-source contributors who made this project possible
+=======
+
+
+Co-authored-by: AI Assistant <ai@users.noreply.github.com>
+>>>>>>> e3d1dde80e90b2954d434b667d24e91b396d6d64

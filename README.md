@@ -168,11 +168,16 @@ The application uses MongoDB with the following default configuration:
 ## 📱 Screenshots
 
 ### Home Page
-![Home Page](screenshots/home.png)
+![Home Page]
+
+<img width="1366" height="768" alt="Screenshot (415)" src="https://github.com/user-attachments/assets/dc1ffd4b-9e7e-455a-bd4e-92b8e5243f8f" />
+
 *Welcome page with feature overview and call-to-action*
 
 ### Dashboard
 ![Dashboard](screenshots/dashboard.png)
+<img width="1366" height="768" alt="Screenshot (414)" src="https://github.com/user-attachments/assets/56b38d7f-2937-4faf-8e20-6e2e0109cc69" />
+
 *Main dashboard showing available sweets with search and filter*
 
 ### Admin Panel
@@ -264,12 +269,7 @@ The integration of AI tools into this development process was highly beneficial.
    ```bash
    cd frontend
    npm run build
-<<<<<<< HEAD
-   ```
 
-2. Deploy to platforms like Vercel, Netlify, or AWS S3
-=======
->>>>>>> e3d1dde80e90b2954d434b667d24e91b396d6d64
 
 ## 🤝 Contributing
 
@@ -278,27 +278,3 @@ The integration of AI tools into this development process was highly beneficial.
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-<<<<<<< HEAD
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
-
-Co-authored-by: AI Assistant <ai@users.noreply.github.com>
-
-## 🙏 Acknowledgments
-
-- Spring Boot team for the excellent framework
-- React team for the powerful frontend library
-- MongoDB team for the flexible database solution
-- Tailwind CSS for the utility-first CSS framework
-- All the open-source contributors who made this project possible
-=======
-
-
-Co-authored-by: AI Assistant <ai@users.noreply.github.com>
->>>>>>> e3d1dde80e90b2954d434b667d24e91b396d6d64

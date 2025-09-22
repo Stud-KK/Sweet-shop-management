@@ -6,11 +6,10 @@ import com.sweetshop.dto.RegisterRequest;
 import com.sweetshop.service.CustomAuthService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:3001"})
 public class AuthController {
     private final CustomAuthService authService;
 
@@ -19,11 +18,8 @@ public class AuthController {
     }
 
     @GetMapping("/health")
-    public ResponseEntity<Map<String, String>> health() {
-        Map<String, String> response = new HashMap<>();
-        response.put("status", "UP");
-        response.put("service", "Auth Service");
-        return ResponseEntity.ok(response);
+    public ResponseEntity<String> health() {
+        return ResponseEntity.ok("Auth service is running");
     }
 
     @PostMapping("/register")

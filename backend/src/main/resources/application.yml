@@ -1,37 +1,25 @@
 server:
   port: 8080
+  error:
+    include-message: always
   servlet:
     context-path: /api
+  cors:
+    allowed-origins: "*"
+    allowed-methods: "*"
+    allowed-headers: "*"
+    allow-credentials: false
+    max-age: 3600
 
 spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/sweetshop
+  security:
+    jwt:
+      secret: mySecretKey123456789012345678901234567890
+      expiration: 86400000 # 24 hours
 
 logging:
   level:
     com.sweetshop: DEBUG
-    org.springframework.web: DEBUG
-    org.springframework.data.mongodb: DEBUG
-    cors:
-      allowed-origins: "http://localhost:3000,http://localhost:3001"
-      allowed-methods: "GET,POST,PUT,DELETE,OPTIONS"
-      allowed-headers: "*"
-      exposed-headers: "Authorization"
-      allow-credentials: true
-      max-age: 3600
-
-logging:
-  level:
-    org.springframework.web: DEBUG
-    org.springframework.security: DEBUG
-    com.sweetshop: DEBUG
-
-# admin.email=admin@example.com
-# admin.password=Y6IxucM1UU5zcfyv+2bBb/cDm0gv1uSvM3pls46MoSoJAVzXBoTzu9/UkLMYYghr
-    org.springframework.data.mongodb: DEBUG
-    org.springframework.web: DEBUG
-    com.sweetshop: DEBUG
-
-# admin.email=admin@example.com
-# admin.password=Y6IxucM1UU5zcfyv+2bBb/cDm0gv1uSvM3pls46MoSoJAVzXBoTzu9/UkLMYYghr

@@ -15,7 +15,7 @@ const AdminPanel = () => {
   const [editingSweet, setEditingSweet] = useState(null);
 
   useEffect(() => {
-    if (!user?.isAdmin) {
+    if (!user || (!user.isAdmin && user.role !== 'ADMIN')) {  // Fix: Check both conditions
       toast.error('Access denied. Admin privileges required.');
       navigate('/');
     }

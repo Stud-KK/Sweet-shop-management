@@ -42,7 +42,11 @@ export const AuthProvider = ({ children }) => {
     const response = await authAPI.login(email, password);
     const { token, username: userUsername, role, isAdmin } = response.data;
 
-    const userData = { username: userUsername, role, isAdmin };
+    const userData = { 
+      username: userUsername, 
+      role, 
+      isAdmin: isAdmin || role === 'ADMIN' // Fix: Check both isAdmin and role
+    };
 
     setToken(token);
     setUser(userData);
@@ -82,7 +86,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const isAdmin = () => {
-    return user && user.role === 'ADMIN';
+    return user && (user.isAdmin || user.role === 'ADMIN'); // Fix: Check both conditions
   };
 
   const value = {
